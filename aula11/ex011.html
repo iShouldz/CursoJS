@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar nacionalidade!</title>
+</head>
+<body>
+    <h1>Verificar a nacionalidade!</h1>
+    Digite a nacionalidade <input name="txtnacionalidade" id="txtnacionalidade">
+    <input type="button" value="Submeter" onclick="verificar()">
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function verificar(){
+            var nacionalidade = window.document.getElementById('txtnacionalidade')
+            var resultado = window.document.getElementById('resultado')
+            if(nacionalidade.value == 'BR'){
+                resultado.innerHTML = '<p> Você é brasileiro! </p>'
+            }else{
+                resultado.innerHTML = '<p> Você é estrangeiro! </p>'
+            }  
+        }
+    </script>
+
+</body>
+</html>

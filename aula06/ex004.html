@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /*
+        var nome = window.prompt("Qual é o seu nome? ")
+        document.writeln(`Ola, ${nome}</strong>! Seu nome tem ${nome.length} letras.<br/>`)
+        document.writeln(`Em maiusculo: ${nome.toUpperCase()}`)
+        */
+
+        var nome = window.prompt("Qual o seu nome? ")
+        var idade = window.prompt("Qual a sua idade? ")
+        var salario = window.prompt("Qual o seu salario? ")
+        document.writeln(`Então, seu nome é ${nome} e você tem ${idade} anos`)
+        document.writeln(`O seu salario é ${String(salario.toLocaleString('pt-BR', {style: 'currency', currency: BRL}))}`)
+    </script>
+</body>
+</html>

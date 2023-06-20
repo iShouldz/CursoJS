@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercicio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar?</h1>
+    </header>
+    <section>
+        <!--Exibi informações na tela-->
+        <div id="div1">
+            <p>
+                Inicio: <input type="number" id="inicio" min="-1">
+            </p>
+            <p>
+                Fim: <input type="number" id="fim" min="1">
+            </p>
+            <p>
+                Passo: <input type="number" id="passo">
+            </p>
+            <p>
+                Submeter <input type="button" value="Submeter" onclick="contar()">
+            </p>
+        </div>
+        <!--Exibir Resultados-->
+        <div id="div2">
+            Aguardando ...
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Shz Studios</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
